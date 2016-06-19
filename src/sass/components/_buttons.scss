@@ -1,0 +1,11 @@
+.button {
+	font-family: $headline-font;
+	font-size: 1.2em;
+	margin-top: auto;
+	align-self: flex-start;
+	color: $main-color;
+	text-align: center;
+	padding: .4em 1em;
+	background: $secondary-color;
+	border-radius: $radius;
+}

@@ -1,0 +1,33 @@
+{
+	"Artist": [
+		{
+			"Millencolin": "Titles"
+		},
+		{
+			"The Flatliners": "Titles" [
+				{
+					"Destroy to Create",
+					"The Great Awake",
+					"Cavalcade",
+					"Dead Language",
+					"Division of Spoils"
+				}
+			]
+		},
+		{
+			"Foo Fighters": "Titles" [
+				{
+					"Foo Fighter",
+					"The Colour And The Shape",
+					"There Is Nothing Left To Loose",
+					"One By One",
+					"In Your Honor",
+					"Skin And Bones",
+					"Echoes, Silence, Patience & Grace",
+					"Wasting Light",
+					"Sonic Highways"
+				}
+			]
+		}
+	]
+}

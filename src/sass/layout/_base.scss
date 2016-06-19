@@ -1,0 +1,63 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	min-height: 100vh;
+	background: rgba(103,255,211,0.2);
+	justify-content: center;
+	line-height: 1.6;
+	font-family: $main-font;
+}
+p {
+	@include fontFace($main-font, 1, $light, #000);
+	font-weight: 300;
+}
+span {
+	@extend p;
+}
+h1 {
+	@include fontFace($headline-font, 1.8, $normal, $secondary-color);
+}
+body, .main-content, .col, .product {
+	display: flex;
+}
+body, .col {
+	flex-direction: column;	
+}
+div {
+	// Debugging tool. When variable divOutline is set to 'true', all divs get an outline
+	@include divOutline;
+}
+.main-content {
+	margin: 0 auto;
+	flex: 1;
+}
+.col {
+	margin: $padding;
+	padding: ($padding);
+	border-radius: 1em;
+	background: rgba(103,255,211,0.3);
+	flex: 1 0;
+	a {
+		align-self: flex-end;
+		margin-top: auto;
+	}
+	img {
+		max-width: 250px;
+		height: auto;
+	}
+}
+#ul-products {
+	text-align: center;
+	img {
+		max-width: 175px;
+		height: auto;
+		background: #fff;
+		border: 1px solid $secondary-color;
+	}
+	li {
+		padding-top: 1em;
+		padding-bottom: 1em;
+		border-bottom: 1px dashed $secondary-color;
+	}
+}

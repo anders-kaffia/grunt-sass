@@ -1,0 +1,34 @@
+{
+	"donuts": {
+		"plain" : {
+			"desc": "Plain - Plain old donut",
+			"imgLocation": "plain.jpg",
+			"cost": 1,
+			"id": "plain"
+		},
+		"bacon" : {
+			"desc": "Bacon - BAACON!",
+			"imgLocation": "bacon.png",
+			"cost": 1.5,
+			"id": "bacon"
+		},
+		"banana" : {
+			"desc": "Banana - Fruity McFruit",
+			"imgLocation": "banana.png",
+			"cost": 2,
+			"id": "banana"
+		},
+		"chocolate" : {
+			"desc": "Chocolate - Willy Wonka style",
+			"imgLocation": "chocolate.png",
+			"cost": 1,
+			"id": "chocolate"
+		},
+		"strawberry" : {
+			"desc": "Strawberry - Bring in the Champagne!",
+			"imgLocation": "strawberry.png",
+			"cost": 3,
+			"id": "strawberry"
+		}
+	}
+}

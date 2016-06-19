@@ -1,0 +1,89 @@
+/* Custom, iPhone Retina */ 
+@media (max-width : 719px) {
+	.mobile-menu {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.header-box {
+		flex: 1;
+		background: $secondary-color;
+	}
+	.main-header {
+		ul, li {
+			text-align: center;
+			width: 100%;
+			background: $main-color;
+			li {
+				display: block;
+				padding: 0;
+			}
+		}
+	}
+	@while $step <=10 {
+		.darken li:nth-child(#{$step}) {
+		    background-color: darken($main-color, ($step * 7));
+		}
+		$step: $step + 1;
+	}
+	// Hides menu content to enable drop-down toggle
+	.menu {
+		height: 0;
+		overflow: hidden;
+		flex-direction: column;
+	}
+	// Shows menu. Is toggled when the "hamburger" menu is clicked
+	.open {
+	    height: auto;
+	}
+	.main-content {
+		width: 100%;
+		margin: 0 auto;
+		flex-wrap: wrap;
+	}
+	.col {
+		flex: 1 50%;
+	}
+}
+/* Small Devices, Tablets */
+@media (min-width : 720px) {
+	// Hides the "hamburger" menu in larger screens
+	.mobile-menu {
+		display: none;
+	}
+	.header-box {
+		background: $main-color;
+	}
+	#logo {
+		min-height: 41px;
+		min-width: 209px;
+	}
+	// Changes the displayed order for the main divs. #Secondary is now displayed before #primary
+	#secondary {
+		order: -1;
+	}
+	// Makes the #primary div larger
+	#primary {
+		flex-grow: 1.5;
+	}
+	.product {
+		img {
+			max-width: 150px;
+			height: auto;
+		}
+	}
+}
+/* Medium Devices, Desktops */
+@media (min-width : 1024px) {
+	.main-content {
+		width: 100%;
+		max-width: 1150px;
+	}
+	.col {
+		flex-basis: 0;
+	}
+	#primary {
+		flex-grow: 2;
+	}
+}

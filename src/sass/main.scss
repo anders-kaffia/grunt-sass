@@ -1,0 +1,17 @@
+/* BASE - reset, typography */
+@import "base/_reset.scss";
+@import "base/_typography.scss";
+
+/* ABSTRACT - functions, mixins, variables */
+@import "abstract/_functions.scss";
+@import "abstract/_mixins.scss";
+@import "abstract/_variables.scss";
+
+/* COMPONENTS - buttons */
+@import "components/_buttons.scss";
+
+/* LAYOUT - base, footer, header, media queries */ 
+@import "layout/_footer.scss";
+@import "layout/_header.scss";
+@import "layout/_base.scss";
+@import "layout/_media-query.scss";

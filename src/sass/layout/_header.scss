@@ -1,0 +1,33 @@
+.main-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	#logo {
+		background: $secondary-color;
+		display: flex;
+		flex: 2;
+		justify-content: space-around;
+		align-items: center;
+	}
+	ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		li {
+			display: inline-block;
+			padding-right: 10%;
+		}
+		li:last-child {
+			padding-right: 0;
+		}
+	}
+}
+.header-box {
+	flex: 1;
+	height: 15vh;
+	background: $main-color;
+}
+#products, #about, #location {
+	// Changes the cursor to pointer to point out clickable items in the main menu
+	cursor: pointer;
+}

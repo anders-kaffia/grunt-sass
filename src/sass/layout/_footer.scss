@@ -1,0 +1,11 @@
+.main-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10vh;
+	margin-top: auto;
+	background: $secondary-color;
+	span {
+		color: $main-color;
+	}
+}
